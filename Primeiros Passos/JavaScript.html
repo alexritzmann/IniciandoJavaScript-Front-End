@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="javascrip.js"></script>
+    <title>Iniciando Java Script</title>
+</head>
+<body>
+    <header>Aluno foi aprovado ou não?</header>
+    <label for="">Digite a nota do alino:</label>
+    <input type="text" id="nota">
+    <button onclick="verificaAprovacao()">Verificar aprovação</button>
+    <p id="resultado"></p>
+    <br>
+    <br>
+    <h2>Primeiro Teste em JS</h2>
+    <div>1-> Crie uma página HTML básica com título, descrição da atividade e espaço para inserção de dados pelo usuário.</div>
+    <div>2-> Adicione dois campos de entrada (input): um para o preço original do produto e outro para a porcentagem de desconto.</div>
+    <div>3-> Inclua um botão que, ao ser clicado, execute uma função javascript para calcular o preço final após o desconto.</div>
+    <div>4-> A função deve usar operadores para calcular o valor do desconto e o preço final.</div>
+    <div>5-> Use estruturas condicionais if-else para verificar se os valores inseridos são válidos (por exemplo, preços ou porcentagens negativas não são permitidas).</div>
+    <div>6-> Exiba o resultado usando console.log e alert para mostrar o preço original, o valor do desconto e o preço final.</div>
+    <br><br>
+    <h2>Prática:</h2>
+    <br>
+    <h3>Calculadora de desconto</h3>
+    <label for="">Digite o valor do produto</label>
+    <input type="number" id="precoOriginal">
+    <br>
+    <label for="">Digite o percentual de desconto</label>
+    <input type="number" id="percentualDesconto">
+    <br>
+    <br>
+    <button onclick="verificaNumero()">Calcular</button>
+    <div>
+        <label for="">Valor original do produto: </label><label id="textoPrecoOriginal"></label>
+        <br>
+        <label for="">Valor do desconto: </label><label id="textoValorDesconto"></label>
+        <br>
+        <label for="">Valor final: </label><label id="textoPrecoFinal"></label>
+    </div>
+</body>
+</html>
