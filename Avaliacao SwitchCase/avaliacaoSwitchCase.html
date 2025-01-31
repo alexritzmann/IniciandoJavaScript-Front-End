@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="avaliacaoSwitchCase.js"></script>
+    <title>Trocar idioma da saudação</title>
+</head>
+<body>
+    <h1>Vamos trocar o idioma da Saudação</h1>
+
+    <label for="">Selecione o idioma</label>
+    <form action="#">
+        <label for="lang">Idiomas</label>
+        <select name="lang" id="lang">
+            <option value="pt">Português</option>
+            <option value="en">Inglês</option>
+            <option value="es">Espanhol</option>
+            <option value="fr">Françês</option>
+        </select>
+
+    </form>
+    <button id="trocaIdioma" onclick="trocaIdioma()">Trocar Idioma</button>
+    <br>
+    <p id="saudacao"></p>
+</body>
+</html>
