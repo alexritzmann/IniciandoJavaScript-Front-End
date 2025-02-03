@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body
+        {
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        label
+        {
+            display: block;      
+        }
+        button
+        {
+            display: block;
+            margin: 10px;
+        }
+        .labelRadio
+        {
+            display: inline;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage</title>
+</head>
+<body>
+    <h1>Formulário de validação</h1>
+    <form id="contactForm">
+        <label for="email">E-mail: </label>
+        <input type="text" id="email" maxlength="200"/>
+        <label for="telefone">Telefone: </label>
+        <input placeholder="DDD+Número" type="text" id="telefone" maxlength="40" name="telefone" onkeyup="mascara( this, mtel );"/>
+        <label for="senha">Senha: </label>
+        <input type="text" id="senha" maxlength="256"/>
+        <label>Escolha onde quer armazenar os dados: </label>
+        <input type="radio" name="storage" id="localStorage" value="local">
+        <label class="labelRadio" for="localStorage">Local Storage</label>
+        <input type="radio" name="storage" id="sessionStorage" value="session">
+        <label class="labelRadio" for="sessionStorage">Session Storage</label>
+
+        <button type="submit">Enviar</button>
+        
+    </form>
+
+    <button id="showLocalStorage">Mostrar dados do Local Storage</button>
+    <button id="showSessionStorage">Mostrar dados do Session Storage</button>
+    <button id="clearSession">Reiniciar sessão</button>
+
+    <div id="storageData">
+        <div id="localStorageData" class="storage-section"></div>
+        <div id="sessionStorageData" class="storage-section"></div>
+    </div>
+
+    <script src="localStorage.js"></script>
+</body>
+</html>

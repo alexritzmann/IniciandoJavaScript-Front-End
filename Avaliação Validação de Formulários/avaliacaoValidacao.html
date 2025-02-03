@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body
+        {
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        label
+        {
+            display: block;      
+        }
+        button
+        {
+            display: block;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avaliacao de Validações</title>
+</head>
+<body>
+    <h1>Formulário de validação</h1>
+    <form id="contactForm">
+        <label for="email">E-mail: </label>
+        <input type="text" id="email" maxlength="200"/>
+        <label for="telefone">Telefone: </label>
+        <input placeholder="DDD+Número" type="text" id="telefone" maxlength="40" name="telefone" onkeyup="mascara( this, mtel );"/>
+        <label for="senha">Senha: </label>
+        <input type="text" id="senha" maxlength="256"/>
+        <button type="submit">Enviar</button>
+        
+    </form>
+    
+    <script src="avaliacaoValidacao.js"></script>
+</body>
+</html>
