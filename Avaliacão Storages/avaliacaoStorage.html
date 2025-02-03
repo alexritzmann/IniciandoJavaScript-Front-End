@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avaliação Storage</title>
+    <link rel="stylesheet" href="avaliacaoStorage.css">
+</head>
+<body class="tema-claro">
+    <h1>Formulário de registro</h1>
+
+    <form id="contactForm">
+        <div>
+            <label for="escolherTema">Escolha o tema: </label>
+            <select name="tema" id="tema">
+                <option value="temaClaro">Claro</option>
+                <option value="temaEscuro">Escuro</option>
+            </select>
+        </div>
+        <div>
+            <label for="name">Digite seu username temporário:</label>
+            <input type="text" id="name" name="name" />
+        </div>
+        <div>
+            <label for="tarefa">Tarefa para realizar: </label>
+            <input type="text" id="tarefa" maxlength="250" />
+        </div>
+        <div>
+            <label>Escolha onde quer armazenar os dados: </label>
+            <input type="radio" name="storage" id="localStorage" value="local">
+            <label class="labelRadio" for="localStorage">Local Storage</label>
+            <input type="radio" name="storage" id="sessionStorage" value="session">
+            <label class="labelRadio" for="sessionStorage">Session Storage</label>
+            <input type="radio" name="storage" id="cookieStorage" value="cookie">
+            <label class="labelRadio" for="cookieStorage">Cookie Storage</label>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <button onclick="alterarTema()" id="alterarTema">Alterar tema</button>
+
+    <script src="avaliacaoStorage.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+body {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+.tema-claro {
+    background-color: #ffffff;
+    color: #000000;
+}
+.tema-escuro {
+    background-color: #121212;
+    color: #ffffff;
+}
+label, button {
+    display: block;
+    margin-top: 10px;
+}
+.labelRadio {
+    display: inline;
+}

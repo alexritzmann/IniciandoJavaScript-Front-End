@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+       label, button
+       {
+           display: block;
+           margin-top: 10px;
+       }
+       .labelRadio
+       {
+           display: inline;
+       }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookies Storage</title>
+</head>
+<body>
+    <h1>Exemplo de utilização de Cookies</h1>
+    <div id="welcomeMessage"></div>
+    <!-- Div para exibir a mensagem de boas vindas -->
+    <label for="name">Digite seu username:</label>
+    <!-- Rotulo para campo de entrada -->
+    <input type="text" id="name" name="name"/>
+    <!-- Campo de entrada para username -->
+    <button onclick="setCookie()">Salvar username</button>
+    <!-- Botão para salvar Cookie -->
+     <button onclick="deleteCookie()">Deletar cookie</button>
+     <!-- Botão para deletar Cookie -->
+
+    <script src="cookies.js"></script>
+</body>
+</html>
